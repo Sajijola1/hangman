@@ -12,8 +12,6 @@ word = random.choice(word_list)
 print(word) 
 
 def check_guess(char):
-    """This function takes the guessed letter as an argument 
-    and checks if that letter is in the secret word."""
     
     
     char = char.lower()
@@ -25,8 +23,6 @@ def check_guess(char):
         print(f"Sorry, {char} is not in the word. Try again.")
 
 def ask_for_input():
-    """Asks the user for input and iteratively checks to see 
-    if the input is a valid guess"""
     while True:
         
         guess = input('Guess a single letter: ')
