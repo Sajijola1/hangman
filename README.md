@@ -22,6 +22,15 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 ```bash
 python3 milestone_2.py
 ```
+## Milestone 3
+
+- In this milestone, we defined functions in the programme, one to iteratively prompt the user for a valid guess and another to check if the user's guess is in the secret word. 
+
+- As usual, the python file was executed using:
+
+```bash
+python3 milestone_3.py
+```
 ## Milestone n
 
 - Continue this process for every milestone, making sure to display clear understanding of each task and the concepts behind them as well as understanding of the technologies used.
