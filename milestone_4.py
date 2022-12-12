@@ -4,7 +4,7 @@ class Hangman():
     def __init__(self, word_list, num_lives=5) -> None:
         self.word = random.choice(word_list)
         self.word_guessed = ['_'] * len(self.word)
-        self.num_letters = len(set(self.word) )
+        self.num_letters = len(set(self.word))
         self.num_lives = num_lives
         self.word_list = word_list
         self.list_of_guesses = []
@@ -14,6 +14,13 @@ class Hangman():
 
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
+
+            for i, j in enumerate(self.word): # use the enumerate() function to loop over the word
+                if j == guess:
+                    self.word_guessed[i] = j
+            
+            self.num_letters -= 1   # Reduce the num_letters variable by 1
+
         #else:
         #    print(f"Sorry, {guess} is not in the word. Try again.")
 
@@ -31,4 +38,4 @@ class Hangman():
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
-    self.ask_for_input()
+    ask_for_input()
