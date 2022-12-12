@@ -38,10 +38,11 @@ class Hangman():
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
-            break
+                break
 
 word_list = ['bananas', 'apples', 'oranges', 'mangoes', 'blackberries']
 
 j = Hangman(word_list, 5)
 
 j = j.ask_for_input()
+print(j.list_of_guesses)
