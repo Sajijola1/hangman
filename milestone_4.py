@@ -15,14 +15,14 @@ class Hangman():
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
 
-            # for i, j in enumerate(self.word): # use the enumerate() function to loop over the word
-            #     if j == guess:
-            #         self.word_guessed[i] = j
+            for i, j in enumerate(self.word): # use the enumerate() function to loop over the word
+                if j == guess:
+                    self.word_guessed[i] = j
             
-            # self.num_letters -= 1   # Reduce the num_letters variable by 1
+            self.num_letters -= 1   # Reduce the num_letters variable by 1
 
-        #else:
-        #    print(f"Sorry, {guess} is not in the word. Try again.")
+        else:
+           print(f"Sorry, {guess} is not in the word. Try again.")
 
 
     def ask_for_input(self):
