@@ -32,4 +32,4 @@ class Hangman():
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
     
-    self.ask_for_input()
+    ask_for_input()
