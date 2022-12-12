@@ -18,16 +18,16 @@ class Hangman():
         #    print(f"Sorry, {guess} is not in the word. Try again.")
 
 
-    def ask_for_input(self):
-        while True:
-            guess = input('Guess a single letter: ')
+    # def ask_for_input(self):
+    #     while True:
+    #         guess = input('Guess a single letter: ')
             
-            if not (len(guess) == 1 and guess.isalpha()):
-                print("Invalid letter. Please, enter a single alphabetical character.")
+    #         if not (len(guess) == 1 and guess.isalpha()):
+    #             print("Invalid letter. Please, enter a single alphabetical character.")
             
-            else:
-                print("Invalid letter. Please, enter a single alphabetical character.")
+    #         else:
+    #             print("Invalid letter. Please, enter a single alphabetical character.")
         
-        check_guess(guess)
+    #     check_guess(guess)
 
-    ask_for_input()
+    # ask_for_input()
