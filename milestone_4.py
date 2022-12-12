@@ -32,4 +32,7 @@ class Hangman():
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
     
-    ask_for_input()
+word_list = ['bananas', 'apples', 'oranges', 'mangoes', 'blackberries']
+j = Hangman(word_list)
+
+j.ask_for_input()
