@@ -22,8 +22,17 @@ class Hangman():
             self.num_letters -= 1   # Reduce the num_letters variable by 1
 
         else:
-           print(f"Sorry, {guess} is not in the word. Try again.")
+            
+            # Reduce the number of lives by 1
+            self.num_lives -= 1
 
+            # Prompt the user of an incorrect guess
+            print(f"Sorry, {guess} is not in the word. Try again.")
+
+            # Display number of remaining lives
+            print(f"You have {self.num_lives} lives left.")
+
+        self.list_of_guesses.append(guess)
 
     def ask_for_input(self):
         while True:
