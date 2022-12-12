@@ -9,25 +9,25 @@ class Hangman():
         self.word_list = word_list
         self.list_of_guesses = []
 
-    def check_guess(self, guess):
-        guess = guess.lower()
+    # def check_guess(self, guess):
+    #     guess = guess.lower()
 
-        if guess in self.word:
-            print(f"Good guess! {guess} is in the word.")
-        #else:
-        #    print(f"Sorry, {guess} is not in the word. Try again.")
+    #     if guess in self.word:
+    #         print(f"Good guess! {guess} is in the word.")
+    #     #else:
+    #     #    print(f"Sorry, {guess} is not in the word. Try again.")
 
 
-    def ask_for_input(self):
-        while True:
-            guess = input('Guess a single letter: ')
+    # def ask_for_input(self):
+    #     while True:
+    #         guess = input('Guess a single letter: ')
             
-            if not (len(guess) == 1 and guess.isalpha()):
-                print("Invalid letter. Please, enter a single alphabetical character.")
+    #         if not (len(guess) == 1 and guess.isalpha()):
+    #             print("Invalid letter. Please, enter a single alphabetical character.")
             
-            else:
-                print("Invalid letter. Please, enter a single alphabetical character.")
+    #         else:
+    #             print("Invalid letter. Please, enter a single alphabetical character.")
         
-        check_guess(guess)
+    #     check_guess(guess)
 
-    ask_for_input()
+    # ask_for_input()
