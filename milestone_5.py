@@ -52,7 +52,7 @@ class Hangman():
                 break
 
 def play_game(word_list):
-    game = Hangman(word_list, 5)
+    game = Hangman(word_list, 3)
 
     while True:
         
