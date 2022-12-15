@@ -60,6 +60,7 @@ def play_game(word_list):
         if game.num_lives == 0:
             # Print a message saying 'You lost!'
             print('You lost!')
+            break
         
         # Check if the `num_letters` variable is greater than 0
         elif game.num_letters > 0:
@@ -70,7 +71,7 @@ def play_game(word_list):
         else:
             # The user has won, Print a message saying 'Congratulations. You won the game!'
             print('Congratulations. You won the game!')
-        break
+            break
 
 play_game(word_list)
 
