@@ -70,7 +70,7 @@ def play_game(word_list):
         else:
             # The user has won, Print a message saying 'Congratulations. You won the game!'
             print('Congratulations. You won the game!')
-            break
+        break
 
 play_game(word_list)
 
