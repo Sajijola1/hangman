@@ -47,12 +47,12 @@ python3 milestone_2.py
 
 The attributed defined for the class are shown in the screenshot below.
 
- ![alt text](ClassAttributes.png)
+ ![alt text](Screenshots/ClassAttributes.png)
 
 The functions defined in the previous milestone were encapsulated within the class as shown in the screenshot below, with behaviours being defined for both correct and incorrect user guesses.
 
-![Screenshot](ClassMethods1.png)
-![Screenshot](ClassMethods2.png)
+![Screenshot](Screenshots/ClassMethods1.png)
+![Screenshot](Screenshots/ClassMethods2.png)
 
 
 ## Milestone 5
@@ -64,7 +64,7 @@ Using `word_list` and `num_lives` as parameters of the function, the logic of th
 >   2. Next, check if the `num_letters` is greater than 0. In this case, you would want to continue the game, so you need to call the `ask_for_input` method. 
 >   3. If the `num_lives` is not 0 and the `num_letters` is not greater than 0, that means the user has won the game. Print a message saying 'Congratulations. You won the game!'.
 
-![Screenshot](GameLogic.png)
+![Screenshot](Screenshots/GameLogic.png)
 
 - Finally, the python file was executed using:
 
