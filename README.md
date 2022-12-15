@@ -34,17 +34,30 @@ python3 milestone_3.py
 ```
 ## Milestone 4
 
-- Here, object-oriented programming(OOP) conepts were employed to create a class for the hangman game. Functions from the previous milestone were integrated as methods of the class with new class atributes being defined to facilitate the flow of the game. The attributed defined for the class are shown in the screenshot below.
+- Here, object-oriented programming(OOP) conepts were employed to create a class for the hangman game. Functions from the previous milestone were integrated as methods of the class with new class atributes being defined to facilitate the flow of the game. These attributes were:
 
-![Screenshot](Screenshot of class attributes.png)
+    - `word`: **string** The word to be guessed, picked randomly from the `word_list`. Remember to import the `random` module into your script.
 
- defined functions in the programme, one to iteratively prompt the user for a valid guess and another to check if the user's guess is in the secret word. 
+    - `word_guessed`: **list** - A list of the letters of the word, with _ for each letter not yet guessed. For example, if the word is 'apple', the word_guessed list would be ['_', '_', '_', '_', '_']. If the player guesses 'a', the list would be ['a', '_', '_', '_', '_'].
 
-- As usual, the python file was executed using:
+    - `num_letters`: **int** - The number of UNIQUE letters in the word that have not been guessed yet.
 
-```bash
-python3 milestone_3.py
-```
+    - `num_lives`: **int** - The number of lives the player has at the start of the game.
+
+    - `word_list`: **list** - A list of words.
+
+    - `list_of_guesses`: **list** - A list of the guesses that have already been tried. Set this to an empty list initially.
+
+
+
+The attributed defined for the class are shown in the screenshot below.
+
+ ![alt text](ClassAttributes.png)
+
+The functions defined in the previous milestone were encapsulated within the class as shown in the screenshot below, with behaviours being defined for both correct and incorrect user guesses.
+
+![](ClassMethods1.png)
+
 
 ## Milestone 5
 
