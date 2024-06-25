@@ -28,8 +28,7 @@ def check_guess(guess:str) -> None:
 
 
 def ask_for_input() -> None:
-    """Write code that will continuously ask the user for 
-    a letter and validate it."""
+    """Continuously asks the user for a letter and validates it."""
     
     # Create a while loop and set the condition to True
     while True:
